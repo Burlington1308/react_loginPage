@@ -29,8 +29,16 @@ function App() {
                 </div>
               </div>
 
-              <button></button>
+              <button className="px-10 py-2 text-2xl rounded-md
+                bg-linear-to-tr from-green-400 to-blue-500
+                hover:from-pink-500 hover:to-yellow-500 
+                text-white">Login</button>
+
+              <p className="font-semibold">Don't have an account?
+                 <a href="a" className="text-blue-400 hover:underline">Register</a>
+              </p>
           </div>
+          <img src={image}/>
         </div>
     </section>
   )
