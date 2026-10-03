@@ -1,4 +1,4 @@
-
+import image from './assets/unsplash.jpg'
 
 function App() {
 
@@ -9,7 +9,8 @@ function App() {
       via-50% to-sky-500 to-100%">
         <div className="flex shadow-2xl">
           <div className="flex flex-col items-center justify-center
-            text-center p-20 gap-8 bg-white rounded-2xl">
+            text-center p-20 gap-8 bg-white rounded-2xl
+            xl:rounded-tr-none xl:rounded-br-none">
               <h1 className="text-5xl font-bold">Welcome</h1>
 
               <div className="flex flex-col text-2xl text-left gap-1">
@@ -38,7 +39,8 @@ function App() {
                  <a href="a" className="text-blue-400 hover:underline">Register</a>
               </p>
           </div>
-          <img src={image}/>
+          <img src={image} className="w-112.5 object-cover xl:rounded-tr-2xl
+            xl:rounded-br-2xl xl:block hidden"/>
         </div>
     </section>
   )
